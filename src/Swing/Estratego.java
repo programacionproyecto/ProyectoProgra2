@@ -22,13 +22,9 @@ public class Estratego extends javax.swing.JFrame {
         Player jugadores[];
     public Estratego() {
         initComponents();
-<<<<<<< HEAD
         tablero=new ficha[10][10];
         jugadores=new Player[100];
-=======
         
-        
->>>>>>> refs/remotes/origin/master
     }
 
     /**
