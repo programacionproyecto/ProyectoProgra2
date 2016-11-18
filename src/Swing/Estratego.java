@@ -2,6 +2,7 @@ package Swing;
 
 import Ficha.Player;
 import Ficha.ficha;
+import java.util.ArrayList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,12 +20,12 @@ public class Estratego extends javax.swing.JFrame {
      * Creates new form Estratego
      */
         ficha tablero[][];
-        Player jugadores[];
+        ArrayList<Player> jugadores;
     public Estratego() {
         initComponents();
 
         tablero=new ficha[10][10];
-        jugadores=new Player[100];
+        jugadores=new ArrayList<>();
         jp1.setVisible(true);
            jp3.setVisible(false);
            jp4.setVisible(false);   
