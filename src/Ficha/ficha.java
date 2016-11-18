@@ -34,5 +34,5 @@ public abstract class ficha {
    public int getRango(){
    return rango;
    }
-   public abstract void mover(String arg[]);
+   
 }
