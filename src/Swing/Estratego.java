@@ -22,8 +22,15 @@ public class Estratego extends javax.swing.JFrame {
         Player jugadores[];
     public Estratego() {
         initComponents();
+<<<<<<< HEAD
         tablero=new ficha[10][10];
         jugadores=new Player[100];
+=======
+        jp1.setVisible(true);
+           jp3.setVisible(false);
+           jp4.setVisible(false);   
+        jp2.setVisible(false);
+>>>>>>> refs/remotes/origin/master
         
     }
 
@@ -67,7 +74,6 @@ public class Estratego extends javax.swing.JFrame {
         });
         jp1.add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 420, -1, -1));
 
-        jp2.setMinimumSize(new java.awt.Dimension(1628, 930));
         jp2.setPreferredSize(new java.awt.Dimension(1628, 930));
         jp2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -77,7 +83,7 @@ public class Estratego extends javax.swing.JFrame {
                 btnIngresarActionPerformed(evt);
             }
         });
-        jp2.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 410, -1, -1));
+        jp2.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, -1, -1));
 
         jp3.setPreferredSize(new java.awt.Dimension(1628, 930));
         jp3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -88,7 +94,7 @@ public class Estratego extends javax.swing.JFrame {
                 btnIpartidaActionPerformed(evt);
             }
         });
-        jp3.add(btnIpartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 340, -1, -1));
+        jp3.add(btnIpartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, -1, -1));
 
         jp4.setPreferredSize(new java.awt.Dimension(1628, 930));
         jp4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -143,10 +149,12 @@ public class Estratego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-           jp1.setVisible(false);
-           btn1.setVisible(false);
-           btn2.setVisible(false);
-           jp2.setVisible(true);
+         jp1.setVisible(false);
+           jp3.setVisible(false);
+           jp4.setVisible(false);   
+        jp2.setVisible(true);   
+           
+           
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
