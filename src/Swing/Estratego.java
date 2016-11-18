@@ -21,9 +21,10 @@ public class Estratego extends javax.swing.JFrame {
      */
         ficha tablero[][];
         ArrayList<Player> jugadores;
+        int f1,c1,f2,c2;
     public Estratego() {
         initComponents();
-
+        
         tablero=new ficha[10][10];
         jugadores=new ArrayList<>();
         jp1.setVisible(true);
@@ -216,6 +217,7 @@ public class Estratego extends javax.swing.JFrame {
             }
             return null;
         }
+        
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
