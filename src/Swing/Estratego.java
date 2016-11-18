@@ -1,5 +1,9 @@
 package Swing;
 
+import Ficha.Player;
+import Ficha.ficha;
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,12 +19,18 @@ public class Estratego extends javax.swing.JFrame {
     /**
      * Creates new form Estratego
      */
+        ficha tablero[][];
+        ArrayList<Player> jugadores;
     public Estratego() {
         initComponents();
+
+        tablero=new ficha[10][10];
+        jugadores=new ArrayList<>();
         jp1.setVisible(true);
            jp3.setVisible(false);
            jp4.setVisible(false);   
         jp2.setVisible(false);
+
         
     }
 
@@ -198,6 +208,15 @@ public class Estratego extends javax.swing.JFrame {
         });
     }
 
+    //Funciones Extras
+        public Player search(String user){
+            for(Player p:jugadores){
+                if(p.getUser().equals(user))
+                    return p;
+            }
+            return null;
+        }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
